@@ -1,0 +1,8 @@
+<p>with-signals works!</p>
+
+<section class="card-list">
+  <ng16-signals-user-card-signaled *ngFor="let usr of users();" [user]="usr"></ng16-signals-user-card-signaled>
+</section>
+<section class="current-card">
+  <ng16-signals-user-card-signaled *ngIf="currentUser()" [user]="currentUser()" [isCurrent]="true"></ng16-signals-user-card-signaled>
+</section> 
