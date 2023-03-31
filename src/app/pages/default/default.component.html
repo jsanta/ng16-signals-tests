@@ -1,0 +1,7 @@
+<p>default works!</p>
+<section class="card-list">
+  <ng16-signals-user-card *ngFor="let usr of users;" [user]="usr" (currentUser)="setCurrent($event)"></ng16-signals-user-card>
+</section>
+<section class="current-card">
+  <ng16-signals-user-card *ngIf="currentUser" [user]="currentUser" [isCurrent]="true"></ng16-signals-user-card>
+</section>

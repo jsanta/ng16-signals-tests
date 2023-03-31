@@ -1,0 +1,45 @@
+:host {
+  display: flex;
+  margin: 0.3rem;
+  .card {
+    background-color: #fffffa;
+    width: 100%;
+    max-width: 17rem;
+    margin: auto;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    .card-body {
+      text-align: center;
+      img {
+        width: 100px;
+        border-radius: 50%;
+      }
+      h5, h6 {
+        margin: 0.3rem 0;
+      }
+      p {
+        margin: 1rem 0 0.3rem;
+      }
+      a {
+        display: inline-block;
+        margin: 0.5rem 0.3rem;
+        padding: 0.3rem 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #1775a8;
+        &:hover {
+          background: #ccc;
+        }
+      }
+    }
+  }
+
+  .hilite {
+    // glow borders in blue
+    box-shadow: 0 0 10px rgba(82, 200, 255, 0.8);
+    border: 1px solid rgba(21, 181, 255, 0.8);
+  }
+}

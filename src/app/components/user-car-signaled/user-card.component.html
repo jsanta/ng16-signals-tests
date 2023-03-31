@@ -1,0 +1,12 @@
+<div class="card"
+  [ngClass]="{
+    'hilite': hilite() 
+  }">
+  <div class="card-body">
+    <h5 class="card-title">{{user?.name}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{user?.email}}</h6>
+    <p class="card-text">{{user?.phone}}</p>
+    <a (click)="highLight()" class="card-link">Hilight</a>
+    <a (click)="setCurrent()" class="card-link" *ngIf="!isCurrent">Set current</a>
+  </div>
+</div>
