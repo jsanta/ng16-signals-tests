@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 80%;
+}
+
+.current-card {
+  background-color: rgba(255, 212, 57, 0.5);
+}
